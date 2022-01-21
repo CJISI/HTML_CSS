@@ -1,0 +1,14 @@
+.container {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+}
+.container p {
+    color: #994411ee;
+    padding:20px;
+}
+p.miparrafo {
+    font-style: italic;
+    background-color: #11449911;
+    font-size: 1.2rem;
+}
