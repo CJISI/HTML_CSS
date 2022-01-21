@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Sesion 2</title>
+    <style>
+        .seccion > * {
+            text-align: center;
+            margin: 10px auto;
+            border: 1px solid #00000099;
+            min-width: 20vw;
+            max-width: 500px;
+        }
+        table thead *, table tbody *, table tfoot * , table caption{
+            padding: 10px;
+        }
+
+        .seccion form div,
+        form input {
+            margin: 10px auto;
+        }
+
+        .seccion table * {
+            border: 1px solid #99000099;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="seccion">
+        <form method="POST" action="Cristian_EjercicioSesion2_HTMLYCSS.html">
+            <div>
+                <span>Nombre: </span>
+                <input type="text" name="nombre" id="nombre" pattern="[a-zA-Z]+" placeholder="Nombre" required />
+            </div>
+            <div>
+                <span>Apellidos: </span>
+                <input type="text" name="apellidos" id="apellidos" pattern="[a-zA-Z]+" placeholder="apellidos"
+                    required />
+            </div>
+            <div>
+                <span>Telefono: </span>
+                <input type="text" name="telefono" id="telefono" pattern="[0-9]{9}" placeholder="telefono" required />
+            </div>
+            <div>
+                <span>Email: </span>
+                <input type="text" name="email" id="email" pattern="[a-z._]+@[a-z]+.[a-z]+" placeholder="email"
+                    required />
+            </div>
+            <div>
+                <span>Direccion: </span>
+                <input type="text" name="direccion" id="direccion" pattern="[a-zA-Z]+" placeholder="direccion"
+                    required />
+            </div>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <div class="seccion">
+        <table>
+            <thead>
+                <th>Titulo 1</th>
+                <th>Titulo 2</th>
+                <th>Titulo 3</th>
+                <th>Titulo 4</th>
+            </thead>
+            <tfoot>
+                <td>Pié 1</td>
+                <td>Pié 2</td>
+                <td>Pié 3</td>
+                <td>Pié 3</td>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Cuerpo 1</td>
+                    <td colspan="2" rowspan="2">Cuerpo 2</td>
+                    <td>Cuerpo 4</td>
+                </tr>
+                <tr>
+                    <td>Cuerpo 1</td>
+                    <td>Cuerpo 4</td>
+                </tr>
+            </tbody>
+            <caption>TITULO DE LA TABLA</caption>
+            
+
+        </table>
+    </div>
+</body>
+
+</html>
