@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1, h2, h3 {
+            text-align: center;
+        }
+        picture figure {
+            display: inline-block;
+        }
+        figure figcaption {
+            text-align: center;
+        }
+        .container {
+            border:1px solid black;
+            margin: 10px auto;
+            padding: 20px;
+            text-align:center;
+            max-width: 40vw;
+        }
+        .container * {
+            max-width: 40vw;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ejercicio 3 - Imagenes, Videos y Auddio</h1>
+    <!-- Para este ejercicio deberéis introducir una imagen y darle además de un texto alternativo.
+    Aparte, añadiréis un audio y un vídeo a vuestra elección, deben tener algunos de los atributos vistos en las
+    sesiones u otros que os parezcan interesantes. -->
+
+    <div class="container">
+        <h2>Contenedor de imagenes</h2>
+        <picture>
+            <figure> 
+                <img src="https://picsum.photos/500" alt="Pisum Imagen Aleatoria">
+                <figcaption>
+                    Esta es una imagen de prueba.
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="https://picsum.photos/500?grayscale" alt="Pisum Imagen Aleatoria">
+                <figcaption>
+                    Esta es una imagen de prueba.
+                </figcaption>
+            </figure>
+        </picture>
+    </div>
+    <div class="container">
+        <h2>Contenedor de video</h2>
+        <video src="https://cdn.videvo.net/videvo_files/video/free/2014-06/large_watermarked/Blue_Sky_and_Clouds_Timelapse_0892__Videvo_preview.mp4" autoplay muted loop />
+    </div>
+    <div class="container">
+        <h2>Contenedor de audio</h2>
+        <audio src="https://cdn.pixabay.com/download/audio/2022/01/20/audio_743615ade2.mp3?filename=everything-feels-new-15241.mp3" autoplay controls preload="auto" />
+    </div>
+</body>
+
+</html> 
