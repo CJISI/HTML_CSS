@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+    <style>
+        .container {
+            margin: 0 auto;
+            width: 40vw;
+            max-width: 600px;
+        }
+        .container p {
+            font-family: sans-serif;
+            padding: 1em;
+            transition: 0.5s;
+        }
+        .container p:hover {
+            background-color: #00000020;
+        }
+        .container>p {
+            color:red;
+        }
+        .container>p.miparrafo {
+            color:blue;
+        }
+        .container div p:not(.miparrafo) {
+            color: green;
+        }
+        .container div p.miparrafo {
+            color:purple;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+    Para este ejercicio vas a crear en el archivo HTML:
+        · Un párrafo.
+        · Un párrafo con la class miparrafo.
+        · Un párrafo dentro de un contenedor div. 
+        · Un párrafo dentro de un contenedor div con la clase miparrafo.
+        · Mediante el uso de CSS aplica a cada uno un color de letra distinto.
+     -->
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cupiditate laborum vitae hic tempore tenetur
+            tempora. Officiis aut culpa repellat deleniti consectetur. Consequatur quas eius pariatur labore eum sit
+            nihil!Ipsum quis consequat et magna eu exercitation cupidatat. Velit amet id ex ipsum amet quis amet esse
+            amet veniam duis. Excepteur sint sit ad non magna irure elit. Sit est dolore consequat tempor deserunt
+            fugiat aute. Nostrud quis anim non non non.</p>
+        <p class="miparrafo">Voluptate ad magna sunt officia veniam enim exercitation. Lorem magna laboris reprehenderit
+            veniam. Labore ex ad esse nulla do magna elit sint.Exercitation amet ut aute deserunt. Officia cupidatat do
+            voluptate enim do proident cillum ex nisi anim in dolor culpa amet. Ullamco deserunt amet culpa nisi nulla
+            nulla consectetur irure qui.Laboris nostrud nulla voluptate minim ex duis. Adipisicing deserunt mollit nisi
+            pariatur occaecat. Labore adipisicing id dolor cillum culpa incididunt sint do occaecat id. Duis duis irure
+            quis dolor minim anim.</p>
+        <div>
+            <p>Qui pariatur ex dolore mollit consectetur adipisicing ad officia eiusmod amet cillum minim nisi eiusmod.
+                Commodo id nisi nostrud elit officia cillum ullamco labore sunt. Aliquip nostrud irure velit quis do
+                nulla incididunt excepteur cupidatat ut. Eu deserunt laboris nisi est est est cupidatat incididunt
+                nostrud mollit ut. Aliqua veniam elit irure eu nisi irure ipsum sit ad nulla. Elit exercitation dolore
+                sunt elit anim qui aliquip culpa cillum.Esse sit enim in sint ullamco anim ad anim. Consectetur et ad
+                sint qui. Minim eu esse sit pariatur nostrud. Reprehenderit aliqua labore eu aute anim consectetur
+                consequat reprehenderit. Est in esse sint aliqua culpa minim commodo esse nulla dolor consequat aliqua.
+            </p>
+        </div>
+        <div>
+            <p class="miparrafo">Incididunt id nostrud officia ullamco est nostrud. Ex eiusmod dolore ad veniam irure
+                consequat. Nulla ex anim sit ex consectetur voluptate ad amet deserunt tempor aute magna. Exercitation
+                consectetur reprehenderit dolore in adipisicing commodo cillum pariatur. Reprehenderit adipisicing irure
+                sunt sunt tempor dolore occaecat duis.</p>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
