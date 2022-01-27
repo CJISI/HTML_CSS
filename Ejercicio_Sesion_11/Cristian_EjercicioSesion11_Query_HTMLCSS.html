@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container h2 {
+            margin: 50px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container img {
+            max-width: 300px;
+        }
+        figure figcaption {
+            width: 100%;
+            text-align: center;
+            border:1px solid black;
+        }
+
+        @media (min-width:1200px) {
+            .imagen_1 {
+                display: none;
+            }
+        }
+
+        @media (min-width:992px) {
+            .imagen_2 {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+    Para este ejercicio deberás insertar tres imágenes, las cuales:
+        · La primera estará oculta en los dispositivos de 1200px (xl).
+        · La segunda estará oculta en dispositivos de 992px (lg).
+        · La tercera siempre se mostrará.
+
+ -->
+
+    <div class="container">
+        <h2>Hay un contenedor con 3 imagenes que se van viendo cuando la pantalla se hace mas pequeña</h2>
+        <figure class="imagen_1">
+            <img src="https://picsum.photos/id/112/300/300" alt="">
+            <figcaption>
+                Se oculta cuando width > 1200px
+            </figcaption>
+        </figure>
+        <figure class="imagen_2" >
+            <img src="https://picsum.photos/id/120/300/300" alt="">
+
+            <figcaption>
+                Se oculta cuando width > 992px
+            </figcaption>
+        </figure>
+        <figure class="imagen_3" >
+            <img src="https://picsum.photos/id/130/300/300" alt="">
+            <figcaption>
+                Nunca se oculta
+            </figcaption>
+        </figure>
+
+    </div>
+</body>
+
+</html>
