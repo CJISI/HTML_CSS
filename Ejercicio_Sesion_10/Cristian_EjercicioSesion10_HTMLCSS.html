@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .cuadrado svg {
+            fill: red;
+            width: 300px;
+            height: 300px;
+        }
+
+        .videoOImagen .imagen{
+            display: none;
+        }
+
+        @media (max-width: 800px) {
+            .cuadrado svg {
+                fill: green;
+            }
+
+            .videoOImagen .video{
+                display: none;
+            }
+            .videoOImagen .imagen {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+
+    Para practicar el diseño responsive, en este ejercicio deberás aplicar lo aprendido 
+    para conseguir lo siguiente:
+        · Un cuadrado de color rojo con unas dimensiones a tu gusto (hazlo grande) 
+        que cuando esté en una pantalla más pequeña deberá cambiar el color a verde.
+        · Un contenedor con un vídeo, el cual si se reduce la resolución a una más baja cambia a una imagen.
+
+ -->
+    <div class="container">
+        <div class="cuadrado">
+            <h2>Cambia de color cuando width es inferior a 800px</h2>
+            <svg>
+                <rect width="100%" height="100%" />
+            </svg>
+
+        </div>
+        <div class="videoOImagen">
+            <h2>Muestra un video o una foto dependiendo de la resolucion
+            </h2>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/nxg4C365LbQ?controls=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="imagen">
+                <img src="https://picsum.photos/id/1020/300/300" alt="">
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
