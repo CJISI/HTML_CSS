@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        td,
+        th {
+            min-width: 30px;
+            width: 100px;
+        }
+        div.container {
+            margin: 50px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+    Utilizando Bootstrap para darle estilos crea:
+        · Una tabla de, como mínimo 4x4.
+        · Una lista ordenada.
+        · Una barra de progreso. 
+    -->
+
+    <!-- Tabla -->
+    <div class="container">
+        <h2>Tabla</h2>
+        <div class="row">
+            <table class="table table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="row">Horas</th>
+                        <th scope="col">Lunes</th>
+                        <th scope="col">Martes</th>
+                        <th scope="col">Miercoles</th>
+                        <th scope="col">Jueves</th>
+                        <th scope="col">Viernes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">8 - 12</td>
+                        <td>Ejercicio en casa</td>
+                        <td>Gimnasio</td>
+                        <td>Ejercicio en casa</td>
+                        <td>Gimnasio</td>
+                        <td>Ejercicio en casa</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">12 - 16</td>
+                        <td>Meditación y Yoga</td>
+                        <td>Estiramientos</td>
+                        <td>Meditación y Yoga</td>
+                        <td>Estiramientos</td>
+                        <td>Meditación y Yoga</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">16 - 20</td>
+                        <td>Estudiar</td>
+                        <td>Estudiar</td>
+                        <td>Estudiar</td>
+                        <td>Estudiar</td>
+                        <td>Estudiar</td>
+
+                    </tr>
+                    <tr>
+                        <td scope="row">20 - 24</td>
+                        <td>Leer</td>
+                        <td>Leer</td>
+                        <td>Leer</td>
+                        <td>Leer</td>
+                        <td>Leer</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Lista ordenada -->
+    <div class="container">
+        <h2 class="">Lista ordenada</h2>
+        <div class="row justify-content-center">
+            <h4>Pasos para hacer un bocadillo</h4>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <ol class="list-group list-group-numbered">
+                    <li>Cortar el pan</li>
+                    <li>Rstregar el tomate</li>
+                    <li>Poner el embutido</li>
+                    <li>Echar aceite en el pan</li>
+                </ol>
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <!-- Barra de progreso -->
+    <div class="container">
+        <h2>Barra de progreso</h2>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10"
+                aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+
+
+
+
+    <!-- BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
