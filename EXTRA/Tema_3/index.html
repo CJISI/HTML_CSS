@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <style>
+        :root {
+            --claro: #eee;
+            --oscuro: #555;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body>header {
+            height: 10vh;
+            background-color: var(--claro);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body>header * {
+            text-align: center;
+        }
+
+        body>nav {
+            height: 5vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav li {
+            display: inline-block;
+            list-style: none;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: px;
+            transition: 0.2s;
+
+
+        }
+
+        nav li:hover {
+            background-color: var(--oscuro);
+            color: var(--claro);
+        }
+
+        div.body-container {
+            border:1px solid black;
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: auto
+        }
+
+        div.body-container>* {
+            min-width: 20vw;
+        }
+
+        .body-container aside ul {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        aside ul li {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            list-style: none;
+            margin: 0;
+            transition: 0.2s;
+        }
+
+        aside ul li:hover {
+            background-color: var(--oscuro);
+            color:var(--claro);
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            grid-template-rows: repeat(3,auto);
+            justify-content: center;
+            align-content: center;
+        }
+        section>*{
+            border:1px solid black;
+            margin:3em;
+            padding:1em;
+        }
+        body>footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border:1px solid black;
+            width: 100%;
+            height: 20vh;
+            position: fixed;
+            bottom:0;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <hgroup>
+            <h1>TITULO</h1>
+            <h2>Subtitulo</h2>
+        </hgroup>
+    </header>
+    <nav>
+        <ul>
+            <li>Inicio</li>
+            <li>Clientes</li>
+            <li>Empresas</li>
+            <li>Ubicación</li>
+            <li>Contacto</li>
+        </ul>
+    </nav>
+    <div class="body-container">
+        <aside>
+            <ul>
+                <li>Soporte</li>
+                <li>Sitios de interes</li>
+                <li>Zona geografica</li>
+                <li>Paises </li>
+                <li>Areas de trabajo</li>
+            </ul>
+        </aside>
+        <section>
+            <article>
+                <hgroup>
+                    <h3>Articulo #1</h3>
+                    <h4>Subtitulo</h4>
+                </hgroup>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eos delectus nobis molestias nihil
+                    doloremque facere? Dolorem, commodi optio animi soluta magni, impedit maxime ex iure quisquam, error
+                    nulla qui.
+                </p>
+                <footer>
+                    Pie de pagina
+                </footer>
+            </article>
+            <article>
+                <hgroup>
+                    <h3>Articulo #2</h3>
+                    <h4>Subtitulo</h4>
+                </hgroup>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eos delectus nobis molestias
+                    nihil
+                    doloremque facere? Dolorem, commodi optio animi soluta magni, impedit maxime ex iure quisquam,
+                    error
+                    nulla qui.
+                </p>
+                <footer>
+                    Pie de pagina
+                </footer>
+            </article>
+            <article>
+                <hgroup>
+                    <h3>Articulo #3</h3>
+                    <h4>Subtitulo</h4>
+                </hgroup>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eos delectus nobis
+                    molestias nihil
+                    doloremque facere? Dolorem, commodi optio animi soluta magni, impedit maxime ex iure
+                    quisquam, error
+                    nulla qui.
+                </p>
+                <footer>
+                    Pie de pagina
+                </footer>
+            </article>
+            <article>
+                <hgroup>
+                    <h3>Articulo #4</h3>
+                    <h4>Subtitulo</h4>
+                </hgroup>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eos delectus nobis
+                    molestias nihil
+                    doloremque facere? Dolorem, commodi optio animi soluta magni, impedit maxime ex iure
+                    quisquam, error
+                    nulla qui.
+                </p>
+                <footer>
+                    Pie de pagina
+                </footer>
+            </article>
+            <article>
+                <hgroup>
+                    <h3>Articulo #5</h3>
+                    <h4>Subtitulo</h4>
+                </hgroup>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eos delectus nobis
+                    molestias nihil
+                    doloremque facere? Dolorem, commodi optio animi soluta magni, impedit maxime ex iure
+                    quisquam, error
+                    nulla qui.
+                </p>
+                <footer>
+                    Pie de pagina
+                </footer>
+            </article>
+            <article>
+                <hgroup>
+                    <h3>Articulo #6</h3>
+                    <h4>Subtitulo</h4>
+                </hgroup>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eos delectus nobis
+                    molestias nihil
+                    doloremque facere? Dolorem, commodi optio animi soluta magni, impedit maxime ex iure
+                    quisquam, error
+                    nulla qui.
+                </p>
+                <footer>
+                    Pie de pagina
+                </footer>
+            </article>
+        </section>
+    </div>
+    <footer>
+        <div>Pie de pagina</div>
+    </footer>
+</body>
+
+</html>

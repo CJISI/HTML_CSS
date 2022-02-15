@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div.flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        div.boton button {
+            background-color: #eee;
+            margin: 20px;
+            padding: 10px;
+            transition: 0.2s;
+            border-radius: 10px;
+        }
+
+        div.boton button:hover {
+            background-color: #333;
+            color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex boton">
+        <p>Pulsa el botón para ver el resultado</p>
+        <button onclick="mensaje()"> Mensaje de alerta</button>
+    </div>
+    <script>
+        function mensaje() {
+            alert('Mensaje de alerta!');
+        }
+    </script>
+</body>
+
+</html>

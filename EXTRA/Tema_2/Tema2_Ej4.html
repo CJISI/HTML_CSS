@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div.flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        div.boton button {
+            background-color: #eee;
+            margin: 20px;
+            padding: 10px;
+            transition: 0.2s;
+            border-radius: 10px;
+        }
+
+        div.boton button:hover {
+            background-color: #333;
+            color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex boton">
+        <p>Pulsa el botón para ver el resultado</p>
+        <button onclick="mensaje()">Información</button>
+        <p id="informacion"></p>
+    </div>
+    <script>
+        function mensaje() {
+            fecha = new Date();
+
+            text = fecha.getDate() + " / " + (fecha.getMonth() + 1) + " / " + fecha.getFullYear()
+
+            div = document.getElementById('informacion').innerHTML = text
+        }
+    </script>
+</body>
+
+</html>
